@@ -1,10 +1,10 @@
 使用SharpShell将SolidWorks eDrawings嵌入到资源管理器，用以预览图纸文件
-使用说明：
-## 注册
+## 使用说明：
+### 注册
 管理员运行：register.bat
-## 注销
+### 注销
 管理员运行：unregister.bat
-## 功能
+### 功能
 1.预览图纸
 
 2.测量、移动组件
