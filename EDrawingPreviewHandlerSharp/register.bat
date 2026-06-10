@@ -12,7 +12,7 @@ if %errorLevel% neq 0 (
 )
 
 echo Adding preview handler registrations...
-set CLSID={A1B2C3D4-E5F6-7890-ABCD-EF1234567891}
+set CLSID={58E3E5DE-76BC-4935-ACA1-B4027F00C696}
 set PREVIEW_KEY={8895b1c6-b41f-4c1c-a562-0d564250836f}
 
 for %%e in (.sldprt .sldasm .slddrw .easm .eprt .edrw .igs .iges .step .stp .x_t .x_b .dwfx .dxf .dwg .stl .tif .tiff) do (
