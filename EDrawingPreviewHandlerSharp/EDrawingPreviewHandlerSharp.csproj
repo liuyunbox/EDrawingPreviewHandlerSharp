@@ -1,0 +1,34 @@
+<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <TargetFramework>net48</TargetFramework>
+    <LangVersion>latest</LangVersion>
+    <UseWindowsForms>true</UseWindowsForms>
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <OutputType>Library</OutputType>
+    <ComVisible>true</ComVisible>
+    <SignAssembly>true</SignAssembly>
+    <AssemblyOriginatorKeyFile>EDrawingPreviewHandlerSharp.snk</AssemblyOriginatorKeyFile>
+    <BaseOutputPath></BaseOutputPath>
+  </PropertyGroup>
+  <ItemGroup>
+    <None Remove="register.bat" />
+    <None Remove="ServerRegistrationManager.exe" />
+    <None Remove="unregister.bat" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="register.bat">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="ServerRegistrationManager.exe">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="unregister.bat">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+  </ItemGroup>
+  <ItemGroup>
+    <PackageReference Include="DuEDrawingControl" Version="1.0.3" />
+    <PackageReference Include="SharpShell" Version="2.7.2" />
+    <ProjectReference Include="..\EDrawingViewerHost\EDrawingViewerHost.csproj" ReferenceOutputAssembly="false" OutputItemType="None" CopyToOutputDirectory="PreserveNewest" />
+  </ItemGroup>
+</Project>

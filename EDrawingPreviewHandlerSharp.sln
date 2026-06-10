@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 18
+VisualStudioVersion = 18.6.11822.322
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EDrawingPreviewHandlerSharp", "EDrawingPreviewHandlerSharp\EDrawingPreviewHandlerSharp.csproj", "{2E453043-882A-F129-0577-86651E22B6C3}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EDrawingViewerHost", "EDrawingViewerHost\EDrawingViewerHost.csproj", "{D51026E4-6E81-3B04-242D-64BBB38B767C}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{2E453043-882A-F129-0577-86651E22B6C3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2E453043-882A-F129-0577-86651E22B6C3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2E453043-882A-F129-0577-86651E22B6C3}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2E453043-882A-F129-0577-86651E22B6C3}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D51026E4-6E81-3B04-242D-64BBB38B767C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D51026E4-6E81-3B04-242D-64BBB38B767C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D51026E4-6E81-3B04-242D-64BBB38B767C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D51026E4-6E81-3B04-242D-64BBB38B767C}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {AF011114-11C7-45A8-BD13-2841A6024B65}
+	EndGlobalSection
+EndGlobal
