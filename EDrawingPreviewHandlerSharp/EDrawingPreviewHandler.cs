@@ -16,7 +16,7 @@ namespace EDrawingPreviewHandlerSharp
     /// 4. 因 EXE 常驻，预览切换无需重复启动，几乎无空白等待
     /// </summary>
     [ComVisible(true)]
-    [Guid("A1B2C3D4-E5F6-7890-ABCD-EF1234567891")]
+    [Guid("58E3E5DE-76BC-4935-ACA1-B4027F00C696")]
     [DisplayName("EDrawing Preview Handler")]
     [PreviewHandler(DisableLowILProcessIsolation = true)]
     [COMServerAssociation(AssociationType.FileExtension, ".easm")]

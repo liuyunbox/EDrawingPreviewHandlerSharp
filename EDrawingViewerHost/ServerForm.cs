@@ -69,13 +69,13 @@ namespace EDrawingViewerHost
             {
                 try
                 {
-                    var markup = this.GetOrCreateMarkup();
+                    var markup = this._edrawingView.Markup;
                     if (markup == null)
                     {
                         Program.WriteLog("Measure: Markup unavailable");
                         return;
                     }
-                    markup.ViewOperator = EMVMarkupOperators.eMVOperatorMeasure;
+                    markup.ViewOperator_Set ( EMVMarkupOperators.eMVOperatorMeasure);
                     Program.WriteLog("Measure mode activated");
                 }
                 catch (Exception ex)
@@ -92,13 +92,14 @@ namespace EDrawingViewerHost
             {
                 try
                 {
-                    var markup = this.GetOrCreateMarkup();
+                    var markup = this._edrawingView.Markup;
                     if (markup == null)
                     {
                         Program.WriteLog("MoveComponent: Markup unavailable");
                         return;
                     }
-                    markup.ViewOperator = EMVMarkupOperators.eMVOperatorMoveComponent;
+                    markup.ViewOperator_Set(EMVMarkupOperators.eMVOperatorMoveComponent);
+                    
                     Program.WriteLog("MoveComponent mode activated");
                 }
                 catch (Exception ex)
@@ -330,7 +331,7 @@ namespace EDrawingViewerHost
                             : "max loads reached (" + this._loadCount + ")";
                         Program.WriteLog("Self-exit: " + reason);
                         // 延迟一点退出，让当前预览完成
-                        System.Windows.Forms.Timer exitTimer = new System.Windows.Forms.Timer();
+                        var exitTimer = new System.Windows.Forms.Timer();
                         exitTimer.Interval = 500;
                         exitTimer.Tick += (s, args) =>
                         {
